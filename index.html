@@ -25,7 +25,11 @@
 
 </head>
 <body>
-
+<audio id="audioFile" loop controls="controls" autoplay>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="audio/Doelia.mp3" type="audio/mpeg" width="2">
+  Your browser does not support the audio element.
+</audio>
 	<!-- PAGE-LOADER -->
 	<div id="loader-wrapper">
 	    <div id="loader"></div>
@@ -58,15 +62,14 @@
 						<!-- LOGO -->
 						<div class="logo">
 							<a href="#">
-								<img height="50" width="50" src="images/doelia.jpg" alt="Logo">
+								<img height="80" width="100" src="images/doelia.png" alt="Logo">
 							</a>
 						</div>
 
 						<!-- TAG-LINE -->
 						<div class="tag-line">
-							Welcome to <mark> <u> <b>Doelia</b> </u> </mark><br><br> 
-							We are coming soon
-							In
+							Welcome to <mark> <u> <b>Doelia</b> </u> </mark><br><br>
+							
 						</div>
 
 						<!-- COUNTDOWN CLOCK -->
@@ -74,6 +77,7 @@
 							<div class="inner-dashboard">
 
 								<!-- DAYS -->
+								<!--
 								<div class="dash days_dash">
 									<div class="inner-dash clearfix">
 										<div class="digit">0</div>
@@ -82,8 +86,9 @@
 									</div>
 									<span class="dash_title">days</span>
 								</div>
-
+								-->
 								<!-- HOURS -->
+								<!--
 								<div class="dash hours_dash">
 									<div class="inner-dash clearfix">
 										<div class="digit">0</div>
@@ -91,8 +96,10 @@
 									</div>
 									<span class="dash_title">hours</span>
 								</div>
+								-->
 
 								<!-- MINIUTES -->
+								<!--
 								<div class="dash minutes_dash">
 									<div class="inner-dash clearfix">
 										<div class="digit">0</div>
@@ -100,8 +107,8 @@
 									</div>
 									<span class="dash_title">minutes</span>
 								</div>
-
-								<!-- SECONDS -->
+								-->
+								<!-- SECONDS 
 								<div class="dash seconds_dash">
 									<div class="inner-dash clearfix">
 										<div class="digit">0</div>
@@ -109,6 +116,7 @@
 									</div>
 									<span class="dash_title">seconds</span>
 								</div>
+								-->
 
 							</div>
 						</div>
@@ -144,8 +152,7 @@
 
 				<!-- TAG-LINE -->
 				<div class="tag-line">
-					Welcome to <mark> <u> <b>Doelia</b> </u> </mark><br><br>
-						We are coming soon  In
+					Welcome to <mark> <u> <b>Doelia</b> </u> </mark>
 				</div>
 
 				<!-- ANALOG CLOCK -->
@@ -252,6 +259,10 @@
 	<!-- COMMON SCRIPT -->
 	<script src="js/common.js"></script>
 	<script src="js/responsive.js"></script>
+	<script>
+		var audio = document.getElementById('audioFile');
+		audio.controls = false;
+</script>
 
 </body>
 </html>
