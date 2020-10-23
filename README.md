@@ -1,2 +1,0 @@
-# monowarhoshen.github.io
-Demo
